@@ -1,0 +1,27 @@
+{# Ce partial remplace le rendu du toggle de palette #}
+{% set palette = config.theme.palette %}
+{% if palette %}
+  <!--<div class="site-names">
+    <span class="site-name" data-theme-name="moos">Moos</span>
+    <span class="site-name" data-theme-name="ab">AB</span>
+    <span class="site-name" data-theme-name="siemens">Siemens</span> 
+  </div>-->
+
+  <div class="md-header__option">
+    <!-- Icône AB -->
+    <button class="md-icon-button" onclick="setTheme('ab')" title="Mode AB">
+      <span class="md-icon ab-icon"></span>
+    </button>
+
+    <!-- Icône Siemens -->
+    <button class="md-icon-button" onclick="setTheme('siemens')" title="Mode Siemens">
+      <span class="md-icon siemens-icon"></span>
+    </button>
+
+    <!-- Icône Moos -->
+    <button class="md-icon-button" onclick="setTheme('moos')" title="Mode Moos">
+      <span class="md-icon moos-icon"></span>
+    </button>
+  </div>
+{% endif %}
+

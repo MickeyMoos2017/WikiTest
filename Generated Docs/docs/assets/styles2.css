@@ -1,0 +1,19 @@
+/* docs/css/force-slate.css */
+:root {
+  /* variables globales si vous voulez remplacer complètement */
+  --md-default-fg-color: #e6eef8 !important;
+  --md-default-bg-color: #0b1220 !important;
+}
+
+/* ou cibler explicitement l'attribut pour appliquer vos variables */
+[data-md-color-scheme="default"],
+html:not([data-md-color-scheme]) {
+  --md-default-fg-color: #e6eef8 !important;
+  --md-default-bg-color: #0b1220 !important;
+}
+
+/* forcer couleurs de composants */
+.md-nav, .md-content {
+  background-color: var(--md-default-bg-color) !important;
+  color: var(--md-default-fg-color) !important;
+}
